@@ -1,8 +1,8 @@
 {
   "Isabella Rodriguez": {
     "maze": "the_ville",
-    "x": 76,
-    "y": 21
+    "x": 75,
+    "y": 20
   },
   "Klaus Mueller": {
     "maze": "the_ville",
@@ -11,7 +11,7 @@
   },
   "Maria Lopez": {
     "maze": "the_ville",
-    "x": 131,
-    "y": 57
+    "x": 132,
+    "y": 56
   }
 }

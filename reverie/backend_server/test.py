@@ -62,15 +62,3 @@ Example output json:
 """
 
 print (ChatGPT_request(prompt))
-
-
-
-
-
-
-
-
-
-
-
-

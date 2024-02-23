@@ -397,7 +397,14 @@ class ReverieServer:
           # {"persona": {"Maria Lopez": {"movement": [58, 9]}},
           #  "persona": {"Klaus Mueller": {"movement": [38, 12]}}, 
           #  "meta": {curr_time: <datetime>}}
-          curr_move_file = f"{sim_folder}/movement/{self.step}.json"
+          
+
+          curr_move_path = f"{sim_folder}/movement"
+          # If the folder doesn't exist, we create it.
+          if not os.path.exists(curr_move_path):
+            os.makedirs(curr_move_path)
+        
+          curr_move_file = f"{sim_folder}/environment/{self.step}.json"
           with open(curr_move_file, "w") as outfile: 
             outfile.write(json.dumps(movements, indent=2))
 
@@ -610,55 +617,3 @@ if __name__ == '__main__':
 
   rs = ReverieServer(origin, target)
   rs.open_server()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
